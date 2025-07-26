@@ -1,0 +1,1659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEDDGE CAPITALS</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/gropu.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg">
+    <link rel="stylesheet" href="./css/trading.css">
+</head>
+
+<body>
+    <div class="container-fluid main-secition-all">
+        <div class="row w-100 m-0 p-0">
+            <div class="col-12 m-0 p-0">
+                <div class="ntrader-header-name">
+                    <div class="ntrader-header-name-one  click-btn " data-target="box1">File</div>
+                    <div class="toggle-box" id="box1">
+                        <div class="box1-header">Connect</div>
+                        <div class="box1-header">Disconnect</div>
+                        <div class="box1-header">Exit</div>
+                    </div>
+
+                    <div class="ntrader-header-name-one click-btn  " data-target="box2">View</div>
+                    <div class="toggle-box" id="box2">
+                        <div class="box2-header"> Market Watch </div>
+                        <div class="box2-header"> Navigator </div>
+                     
+                        <div class="box2-header">Dashboard </div>
+                    </div>
+
+                    <div class="ntrader-header-name-one click-btn" data-target="box3">Report</div>
+                    <div class="toggle-box" id="box3">
+                        <div class="box3-header">Equidity report</div>
+
+                    </div>
+
+
+
+                    <div class="ntrader-header-name-one click-btn" data-target="box4"> Help</div>
+                    <div class="toggle-box" id="box4">
+                        <div class="box4-header">About</div>
+
+                    </div>
+
+
+
+
+                    <div class="ntrader-header-name-one  click-btn" data-target="box5">Language</div>
+                    <div class="toggle-box" id="box5">
+                        <div class="box4-headeer">English</div>
+                        <div class="box4-headeer">Turkish</div>
+
+                    </div>
+
+
+
+
+                </div>
+                <!-- <div class="row">
+                    <div class="col-3"></div>
+                </div> -->
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-12  col-md-12  col-lg-2 navigatior-section-col-side mt-3" id="formContainer1">
+                <!-- first navbar--------section---- -->
+                <div class="navigatior-sectio  p-0">
+                    <div class="navigatior-sectio-row-name-box">
+                        <div class="navigatior-sectio-row-name">Navigator</div>
+                    </div>
+                    <div class="navigatior-sectio-row-name-box2">
+                        <div class="navigatior-sectio-row-full"><img class="win-img" src="./images/icons8-copy-24.png"
+                                alt=""></div>
+                        <div class="navigatior-sectio-row-wrong" id="wrongSign1"><img class="wrong-img"
+                                src="./images/icons8-wrong-30.png" alt=""></div>
+                    </div>
+                </div>
+
+
+                <div class="sidebar-trader-app">
+                    <div class="sidebar">
+                        <ul>
+                            <!-- Login Dropdown -->
+                            <li class="section-title" onclick="toggleDropdown('login-u-dropdown', 'loginArrow')">
+                                <span><img id="loginArrow" height="15px" src="./images/icons8-right-arrow-30.png"
+                                        alt=""></span>
+                                <span><img height="15px" src="./images/user.png" alt=""></span> &nbsp;Login
+                            </li>
+                            <ul id="login-u-dropdown" class="dropdown">
+                                <li class="section-title" onclick="showContent('account-users')">Account</li>
+                            </ul>
+
+                            <!-- <li class="section-title" onclick="toggleDropdown( 'login-dropdown', 'tradeArrow')">
+                                <span><img id="tradeArrow" height="15px" src="./images/icons8-right-arrow-30.png"
+                                        alt=""></span> <span onclick="showContent('trade-cluster')">Trade Cluster</span>
+                            </li> -->
+                            <ul id="login-dropdown" class="dropdown">
+                                <li onclick="showContent('history-server')">History Server</li>
+                            </ul>
+
+                            <!-- Accounts Dropdown -->
+                            <li class="section-title" onclick="toggleDropdown('clients-dropdown', 'clientsArrow')">
+                                <span><img id="clientsArrow" height="15px" src="./images/icons8-right-arrow-30.png"
+                                        alt=""></span>
+                                Accounts
+                            </li>
+                            <ul id="clients-dropdown" class="dropdown">
+                                <li onclick="showContent('trading-account')"><span><img height="15px"
+                                            src="./images/user.png" alt=""></span> Trading Accounts</li>
+                                <li onclick="showContent('online-user')"><span><img height="15px"
+                                            src="./images/user.png" alt=""></span> Online User</li>
+                                <li onclick="showContent('deal-managere')">Managers</li>
+                                <li onclick="showContent('pending-orders')">Pending Orders</li>
+                            </ul>
+
+                            <!-- Clients & Orders Dropdown -->
+                            <li class="section-title" onclick="toggleDropdown('order-dropdown', 'orderArrow')">
+                                <span><img id="orderArrow" height="15px" src="./images/icons8-right-arrow-30.png"
+                                        alt=""></span>
+                                Clients & Orders & Deals
+                            </li>
+                            <ul id="order-dropdown" class="dropdown">
+                                <li class="section-title" onclick="showContent('order-user')"><span><img height="15px"
+                                            src="./images/money.png" alt=""></span> Positions</li>
+                                <li class="section-title" onclick="showContent('orders')"><span><img height="15px"
+                                            src="./images/money.png" alt=""></span> Orders</li>
+                                <li class="section-title" onclick="showContent('deal')"><span><img height="15px"
+                                            src="./images/money.png" alt=""></span> Deals</li>
+                                <!-- <li class="section-title" onclick="showContent('dealing')"><span><img height="15px"
+                                            src="./images/icons8-clerk-48.png" alt=""></span> Dealing Desk</li> -->
+                            </ul>
+
+                            <div class="holidays-right-section">
+                                <li class="section-title" onclick="showContent('holidays')">Holidays</li>
+                                <li class="section-title" onclick="showContent('intelligent-dealing')">
+                                    <span><img height="15px" src="./images/icons8-clerk-48.png" alt=""></span>
+                                    Intelligent Dealing
+                                </li>
+                                <!-- <li class="section-title" onclick="showContent('liquiditity-bridge')">
+                                    <span><img height="15px" src="./images/roller.png" alt=""></span> Liquiditity Bridge
+                                </li> -->
+                                <li class="section-title  show-market-data " id=" "
+                                    onclick="showContent('market-data')">
+                                    <span><img height="15px" src="./images/icons8-data-protection-50.png" alt=""></span>
+                                    Market Data
+                                </li>
+                            </div>
+
+                            <li class="section-title" onclick="toggleDropdown('group-dropdown', 'groupArrow')">
+                                <span><img id="groupArrow" height="15px" src="./images/icons8-right-arrow-30.png"
+                                        alt=""></span>
+                                <span><img height="15px" src="./images/groups.png" alt=""></span> Group
+                            </li>
+
+                            <ul id="group-dropdown" class="dropdown">
+                                <li onclick="showContent('demo')"><span><img height="15px" src="./images/groups.png"
+                                            alt=""></span> Demo</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <!-- ------------------------------------- -->
+            </div>
+            <div class="col-sm-12  col-md-12  col-lg-8   ntrader-middle-section m-0 p-0 mt-3">
+                <!-- second section--------section---- -->
+                <div class="second-section-middle">
+                    <div class="content">
+
+                        <!-- Main content sections that will show based on the sidebar click -->
+
+                        <!-- --------------------login------------------------------- -->
+                        <div id="loginForm">
+                            <div id="account-users" class="section-content  section-content-login-form ">
+
+                                <div class="login-account-header">
+                                    <div class="login-account-header-img"><img height="25px"
+                                            src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="login-account-header-name"> 
+
+
+
+
+                                    </div>
+                                    <div class="login-acc-logo-img">
+                                        <div class="login-account-header-name-que mt-1"><img height="15px"
+                                                src="./images/icons8-question-mark-50.png" alt="#"></div>
+                                        <div class="login-account-header-name-que"><img id="wrongSign" height="26px"
+                                                src="./images/mark-form.png" alt="#"></div>
+                                    </div>
+                                </div>
+                                <!-- <div class="login-account">
+                                    <div class="login-acc-server">
+                                        <label for="server" class="login-server">Server:</label>
+                                        <input type="text" class="search-server"
+                                            placeholder="Search for your Broker....">
+                                        <input type="text" class="search-dropdown search-server">
+                                    </div>
+                                </div> -->
+                                <div class="login-acc-all">
+                                    <div class="login-acc-all-lgn">
+                                        <label for="Login">Login:</label>
+                                        <input type=" number" class="login-input">
+                                    </div>
+                                    <div class="login-acc-all-pass">
+                                        <label for="password">Password:</label>
+                                        <input type="password" name="" class="pass-login" id="password-login">
+                                    </div>
+                                    <div class="login-acc-all-pass">
+                                        <label for="password">Confirm Password:</label>
+                                        <input type="password" name="" class="pass-login-conf">
+                                    </div>
+                                </div>
+
+                                <div class="login-button-two">
+                                    <div class="login-button-two1"> <button type="button"
+                                            class=" ok-login-btn">OK</button>
+                                    </div>
+                                    <div class="login-button-two2"> <button type="button"
+                                            class=" cancel-login-btn">Cancel</button></div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ------------------------------ -->
+                        <div id="trade-cluster" class="section-content  section-content-trade ">
+                            <!-- <p>trader </p> -->
+                            <div class="trade-box-one ">
+                                <div class="trade-cluster-all-one">
+                                    <div class="trade-cluster-all-img"><img height="40px"
+                                            src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                            alt=""></div>
+                                    <div class="trade-cluster-all-img-name">Nextgen </div>
+                                </div>
+                                <div class="section-content-trade-line"></div>
+                                <div class="trade-cluster-all-two">
+                                    <div class="trade-cluster-all-two-name"><span>License Type : </span> <span
+                                            id="dark">Standard
+                                            (Elite)</span></div>
+                                    <div class="trade-cluster-all-two-name-part">
+                                        <div class="trade-cluster-all-two-name-part1">Real Accounts : <span
+                                                id="dark">25000</span>
+                                        </div>
+                                        <div class="trade-cluster-all-two-name-part1">Real Accounts : <span id="dark">0
+                                                /
+                                                25000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trade-middle-lines-more"></div>
+                            <div class="trade-box-two">
+                                <div class="trade-box-two-one-name">
+                                    <div class="trade-box-two-one-name1">Symbols</div>
+                                    <div class="trade-box-two-one-name1">Groups</div>
+                                    <div class="trade-box-two-one-name1">Managers</div>
+                                    <div class="trade-box-two-one-name1">Trade</div>
+                                </div>
+                                <div class="trade-box-two-mid-line"></div>
+                                <div class="trade-box-two-button">
+                                    <div class="trade-box-two-button-btn">Server Name</div>
+                                    <div class="trade-box-two-button-btn-validity">License Validity</div>
+                                </div>
+                            </div>
+
+                            <div class="trade-middle-lines-more"></div>
+
+                            <div class="trade-box-three">
+
+                                <div class="server-cluster-h2">
+                                    <div class="server-cluster-h2-name">Server Cluster</div>
+                                    <div class="server-cluster-h2-name1">- Trade Server : </div>
+                                    <div class="server-cluster-h2-name1">-History Server:</div>
+                                    <div class="server-cluster-h2-name1">-Access Server:</div>
+                                </div>
+                                <div class="trade-middle-lines-clu"></div>
+                                <div class="server-cluster-button">Restart Cluster</div>
+                            </div>
+
+                            <div class="trade-middle-lines-more"></div>
+
+                            <!-- <div class="trade-box-four"></div>
+
+                            <div class="trade-middle-lines-more"></div> -->
+
+
+                        </div>
+                        <!-- ----------------hostory --------------------- -->
+                        <div id="history-server" class="section-content ac">
+                            <div class="trade-box-one ">
+                                <div class="trade-cluster-all-one">
+                                    <div class="trade-cluster-all-img"><img height="40px"
+                                            src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                            alt=""></div>
+                                    <!-- <div class="trade-cluster-all-img-name">Nextgen </div> -->
+                                </div>
+                                <div class="section-content-trade-line-his"></div>
+                                <div class="trade-cluster-all-two">
+                                    <div class="trade-cluster-all-two-name"><span>License Type : </span> <span
+                                            id="dark">Standard
+                                            (Elite)</span></div>
+                                    <div class="trade-cluster-all-two-name-part">
+                                        <div class="trade-cluster-all-two-name-part1">Real Accounts : <span
+                                                id="dark">25000</span>
+                                        </div>
+                                        <div class="trade-cluster-all-two-name-part1">Real Accounts : <span id="dark">0
+                                                /
+                                                25000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trade-middle-lines-more"></div>
+                            <div class="trade-box-two">
+                                <div class="trade-box-two-one-name">
+                                    <div class="trade-box-two-one-name1">Symbols</div>
+                                    <div class="trade-box-two-one-name2">Groups</div>
+                                    <div class="trade-box-two-one-name3">Managers</div>
+                                    <div class="trade-box-two-one-name4">Trade</div>
+                                </div>
+                                <div class="trade-box-two-mid-line-ser"></div>
+                                <div class="trade-box-two-button">
+                                    <div class="trade-box-two-button-btn">Server Name</div>
+                                    <div class="trade-box-two-button-btn-validity">License Validity</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="online-user" class="section-content section-content-trading-acc  active">
+                            <!-- <p> online user</p> -->
+                            <table class="online-user-table">
+                                <thead>
+                                    <tr>
+                                        <th class="online-user-th">Login</th>
+                                        <th class="online-user-th">Name</th>
+                                        <th class="online-user-th">Address</th>
+                                        <th class="online-user-th">Connection</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="online-user-td">1113</td>
+                                        <td class="online-user-td">Nilesh</td>
+                                        <td class="online-user-td">103.200.212.255</td>
+                                        <td class="online-user-td">Manager</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="online-user-td"> 1115</td>
+                                        <td class="online-user-td">Test</td>
+                                        <td class="online-user-td">219.91.153.85</td>
+                                        <td class="online-user-td">Manager</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div id="trading-account" class="section-content section-content-trading-acc">
+                            <!-- <p> trading account</p> -->
+                            <div class="box-container4" id="boxContainer4">
+
+                                <table class="trading-acc-table">
+                                    <thead>
+                                        <tr>
+                                            <th class=" trading-acc-th">Login</th>
+                                            <th class=" trading-acc-th">Name</th>
+                                            <th class=" trading-acc-th">Group</th>
+                                            <th class=" trading-acc-th">Country</th>
+                                            <th class=" trading-acc-th">Company</th>
+                                            <th class=" trading-acc-th">Balance</th>
+
+                                            <th class=" trading-acc-th">Credit</th>
+                                            <th class=" trading-acc-th">Leverage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td ">-</td>
+                                            <td class=" trading-acc-td">-</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td ">-</td>
+                                            <td class=" trading-acc-td">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td">-</td>
+                                            <td class=" trading-acc-td"> -</td>
+                                            <td class=" trading-acc-td ">-</td>
+                                            <td class=" trading-acc-td">-</td>
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                                <!-- -------------------------in paart-------------------------- -->
+
+                                <!-- Right-click area -->
+                                <!-- <div id="boxContainer4" class="box-container">Right-click here</div> -->
+
+                                <!-- Context Menu -->
+                                <ul id="popupMenu2" class="context-menu">
+                                    <li id="newUser">New User</li>
+                                    <li id="editUser">Edit User</li>
+                                    <li id="deleteUser">Delete User</li>
+                                    <li id="columnMenu">Column ▶
+                                        <ul class="submenu-list4" id="submenuList4">
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Login</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Name</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Group</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Country</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Company</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Balance</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Profit</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Equity</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Margin</span>
+                                            <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                    alt="">Create</span>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <!-- Forms -->
+                                <div id="newUserForm" class="form-container">
+                                    <div class="container-manager-new-acc">
+                                        <!-- Header -->
+                                        <div class="header-manager-acc-new">
+                                            <img height="8px" width="26px"
+                                                src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                                alt="App Icon" class="app-icon">
+                                            <span class="title-manager-new">New Account</span>
+                                            <span class=" wrong-btn-new-acc"
+                                                onclick="closeFormtab('newUserForm')">✖</span>
+                                        </div>
+
+                                        <!-- Form -->
+                                        <form class="form-new-acc">
+
+
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="name">Name:</label>
+                                                <input type="text" id="name"
+                                                    class="input-field input-field-new-manager1">
+                                            </div>
+
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="password">Main
+                                                    Password:</label>
+                                                <input type="password" id="password"
+                                                    class="input-field input-field-new-manager2">
+                                            </div>
+
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="password">Read Only
+                                                    Password:</label>
+                                                <input type="password" id="password"
+                                                    class="input-field input-field-new-manager0">
+                                            </div>
+
+
+
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="group">Group:</label>
+                                                <select id="group" class="input-field input-field-new-manager3">
+                                                    <option>demo</option>
+                                                </select>
+                                            </div>
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="company">Company:</label>
+                                                <input type="text" id="company"
+                                                    class="input-field input-field-new-manager4">
+                                            </div>
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="email">Email:</label>
+                                                <input type="email" id="email"
+                                                    class="input-field input-field-new-manager8">
+                                            </div>
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="phone">Phone:</label>
+                                                <input type="text" id="phone"
+                                                    class="input-field input-field-new-manager5">
+
+                                            </div>
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="country">Country:</label>
+                                                <input type="text" id="country"
+                                                    class="input-field input-field-new-manager6 ">
+                                            </div>
+
+
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="address">Address:</label>
+                                                <input type="text" id="address"
+                                                    class="input-field input-field-new-manager7">
+                                            </div>
+
+                                            <!-- Buttons -->
+                                            <div class="button-container">
+                                                <div type="submit" class=" manager-new-add-btn">Add</div>
+                                                <div type="button" class=" manager-new-add-btn">Cancel</div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                                <div id="editUserForm" class="form-container">
+                                    <div class="container-manager-new-acc-edit">
+                                        <!-- Header -->
+                                        <div class="header-manager-acc-new">
+                                            <img height="8px" width="26px"
+                                                src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                                alt="App Icon" class="app-icon">
+                                            <span class="title-manager-new">Edit Account</span>
+                                            <span class=" wrong-btn-new-acc"
+                                                onclick="closeFormEtab('editUserForm')">✖</span>
+                                        </div>
+
+                                        <!-- Form -->
+                                        <form class="form-new-acc">
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="password">Main
+                                                    Password:</label>
+                                                <input type="password" id="password"
+                                                    class="input-field input-field-new-manager-edit2">
+                                            </div>
+
+                                            <div class="new-acc-manager-page">
+                                                <label class="label-new-manager-acc" for="password">Read Only
+                                                    Password:</label>
+                                                <input type="password" id="password"
+                                                    class="input-field input-field-new-manager-edit0">
+                                            </div>
+
+
+                                            <div class="edit-acc-btns-all">
+                                                <div type="submit" class=" manager-new-add-btn">Change</div>
+                                                <div type="button" class=" manager-new-add-btn">Cancel</div>
+                                            </div>
+
+
+                                    </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <div id="deleteUserForm" class="form-container  container-manager-new-acc-delete">
+                                <div class="modal">
+                                    <div class="modal-header">
+                                        <img height="15px" width="56px"
+                                            src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                            alt="App Icon">
+                                        <div class="headin-delete">Headdge Capital</div>
+                                        <div class="headin-delete-wrong" onclick="closeFormdtab('deleteUserForm')"><img
+                                                class="headin-delete-wrong-sign" src="./images/icons8-wrong-30.png"
+                                                alt=""></div>
+                                    </div>
+                                    <div class="modal-body">
+                                        Do you want to delete the selected accounts?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="ok-btn-del">OK</div>
+                                        <div class="ok-btn-del-can">Cancel</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- ----------------------------------------------------- -->
+                        </div>
+                        <!-- </div>
+                        </div> -->
+                        <div id="order-user" class="section-content section-content-position">
+                            <!-- ---------------- <p> position</p> ------------- -->
+                            <div class="container  section-content-position context-menu-area" id="contextArea">
+                                <div class="top-bar">
+                                    <label for="login">Login:</label>
+                                    <input type="text" id="login" placeholder="Enter Login">
+
+
+
+                                    <label for="symbol">Symbol:</label>
+                                    <input type="text" id="symbol" placeholder="Enter Symbol">
+
+                                    <select id="type-filter">
+                                        <option value="all">All</option>
+                                        <option value="all">Open Only</option>
+                                        <option value="all">Close Only</option>
+                                        <option value="all">All</option>
+                                    </select>
+
+                                    <select id="date-filter">
+                                        <option value="today">Today</option>
+                                        <option value="today">Last 3 days</option>
+                                        <option value="today">Last Week</option>
+                                        <option value="today">Last Month</option>
+                                        <option value="today">Last 3 months</option>
+                                        <option value="today">Last 6 months</option>
+                                        <option value="today">All history</option>
+                                        <option value="today">Custom</option>
+                                    </select>
+
+                                    <input type="date" id="start-date" value="2025-01-23">
+                                    <span>-</span>
+                                    <input type="date" id="end-date" value="2025-01-24">
+
+                                    <div id="request">Request</div>
+                                    <div id="export"><img height="20px" src="./images/icons8-downloading-updates-50.png"
+                                            alt="">
+                                    </div>
+                                </div>
+
+                                <div class="table-container ">
+                                    <table class="position-table">
+                                        <thead>
+                                            <tr class="position-table-tr">
+                                                <th class="position-table-th">Time</th>
+                                                <th class="position-table-th">Login</th>
+                                                <th class="position-table-th">Ticket</th>
+                                                <th class="position-table-th">Symbol</th>
+                                                <th class="position-table-th">Type</th>
+                                                <th class="position-table-th">Volume</th>
+                                                <th class="position-table-th">Price (open)</th>
+                                                <th class="position-table-th">SL</th>
+                                                <th class="position-table-th">TP</th>
+                                                <th class="position-table-th">Profit</th>
+                                                <th class="position-table-th">Reason</th>
+                                                <th class="position-table-th">Comment</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table-body">
+                                            <!-- Dynamic Data -->
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <div class="context-menu" id="contextMenu" style="height: 40px !important;">
+                                    <div class="menu-container">
+                                        <p class="menu-text"> Column <span id="dropdownArrow"> <img height="10px"
+                                                    src="./images/icons8-right-arrow-30.png" alt=""> </span></p>
+                                    </div>
+                                    <div class="dropdown-list" id="dropdownBox">
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt="">Ticket</span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt=""> Symbol
+                                        </span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt=""> Type
+                                        </span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt=""> Volume
+                                        </span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt=""> Open
+                                            Price </span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt=""> Sl
+                                        </span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt=""> Tp
+                                        </span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt=""> Profit
+                                        </span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Commission </span>
+                                        <span class="dropdown-item"><img height="10px" src="./images/correct.png"
+                                                alt=""> Reason
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <!-- -------------------------- -->
+
+                        <div id="deal" class="section-content">
+                            <!-- <p> deal</p> -->
+                            <div class="right-click-area" id="rightClickArea">
+                                <div class="filter-container">
+                                    <label for="login">Login:</label>
+                                    <input class="deal-table-input" type="text" id="login" placeholder="Enter login">
+
+                                    <label for="symbol">Symbol:</label>
+                                    <input class="deal-table-input" type="text" id="symbol" placeholder="Enter symbol">
+
+                                    <select class="select-deal" id="type">
+                                        <option value="all">All</option>
+                                        <option value="all">Open Only</option>
+                                        <option value="all">Close Only</option>
+                                        <option value="all">All</option>
+                                    </select>
+
+                                    <select class="select-deal" id="date-range">
+                                        <option value="today">Today</option>
+                                        <option value="today">Today</option>
+                                        <option value="today">Last 3 days</option>
+                                        <option value="today">Last Week</option>
+                                        <option value="today">Last Month</option>
+                                        <option value="today">Last 3 months</option>
+                                        <option value="today">Last 6 months</option>
+                                        <option value="today">All history</option>
+                                        <option value="today">Custom</option>
+                                    </select>
+
+                                    <input class="deal-table-input" type="date" id="start-date" value="2025-01-26">
+                                    <input class="deal-table-input" type="date" id="end-date" value="2025-01-27">
+
+                                    <div class="requestdeal" id="requestdeal">Request</div>
+                                </div>
+
+                                <table class="deal-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="deal-table-th">Time</th>
+                                            <th class="deal-table-th">Login</th>
+                                            <th class="deal-table-th">Ticket</th>
+                                            <th class="deal-table-th">Symbol</th>
+                                            <th class="deal-table-th">Action</th>
+                                            <th class="deal-table-th">Volume</th>
+                                            <th class="deal-table-th">Price</th>
+                                            <th class="deal-table-th">SL</th>
+                                            <th class="deal-table-th">TP</th>
+                                            <th class="deal-table-th">Profit</th>
+                                            <th class="deal-table-th">Reason</th>
+                                            <th class="deal-table-th">Comment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Table rows will be dynamically populated -->
+                                    </tbody>
+                                </table>
+
+                                <div class="popup" id="popupBox" style="height: 40px !important;">
+                                    <div class="all-pages-box">
+                                        <p class="all-pages-box-p  "> Column <span id="arrowButton"> <img height="10px"
+                                                    background-color: rgb(177, 179, 181); font-weight:600;
+                                                    src="./images/icons8-right-arrow-30.png" alt=""> </span> </p>
+                                    </div>
+                                    <!-- Box that appears when clicking arrow -->
+                                    <div class="box-list" id="boxList">
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt="">Ticket</span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Symbol </span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Type </span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Volume </span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Open Price </span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt=""> Sl
+                                        </span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt=""> Tp
+                                        </span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Profit </span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Commission </span>
+                                        <span class="box-list-correct"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Reason </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- ------------------------ -->
+                        <div>
+                            <div id="deal-managere" class="section-content  section-content-deal-manager">
+                                <!-- <p> managere</p> -->
+                                <div class="manager-table-container container-box" id="containerBox">
+
+                                    <table class="manager-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="manager-th">Login</th>
+                                                <th class="manager-th">Name</th>
+                                                <th class="manager-th">Group</th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td class="manager-td"> -</td>
+                                                <td class="manager-td"> -</td>
+                                                <td class="manager-td"> -</td>
+
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="manager-td"> -</td>
+                                                <td class="manager-td"> -</td>
+                                                <td class="manager-td"> -</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td class="manager-td"> -</td>
+                                                <td class="manager-td"> -</td>
+                                                <td class="manager-td"> -</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <!--  -->
+                                    <div class="menu-popup" id="menuPopup">
+                                        <p class="option-item" id="createManager">New Manager</p>
+                                        <p class="option-item  manager-grau-colo">Edit Manager</p>
+                                        <p class="option-item  manager-grau-colo">Delete Manager</p>
+                                    </div>
+
+                                    <div class="form-popup" id="popupForm">
+                                        <div class="manager-container">
+                                            <div class="header-section">
+                                                <div class="manager-logo"><img height="10px"
+                                                        src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                                        alt=""></div>
+                                                <div class="manager-title">Manager Management</div>
+                                                <div id="closePopup"><img height="10px"
+                                                        src="./images/icons8-wrong-30.png" alt=""></div>
+                                            </div>
+
+                                            <label class="label-field" for="managerName">Name:</label>
+                                            <input class="input-field" type="text" id="managerName">
+
+                                            <label class="label-field" for="managerPassword">Password:</label>
+                                            <input class="input-field" type="password" id="managerPassword">
+
+                                            <label class="label-field">Permissions:</label>
+                                            <div class="permissions-wrapper">
+                                                <div class="permissions-list">
+                                                    <input type="checkbox"> CHANGE LEVERAGE <br>
+                                                    <input type="checkbox"> EDIT TRADES <br>
+                                                    <input type="checkbox"> CHANGE GROUP <br>
+                                                    <input type="checkbox"> DELETE TRADES <br>
+                                                </div>
+                                                <div class="roles-list">
+                                                    No Rights <br>
+                                                    Admin Role <br>
+                                                    Manager Role <br>
+                                                    Full Access Role
+                                                </div>
+                                            </div>
+
+                                            <div class="buttons-container">
+                                                <div class="manager-buttons">
+                                                    <div class="manager-btn">Add</div>
+                                                    <div class="manager-btn">Delete</div>
+                                                    <div class="manager-btn">Edit</div>
+                                                </div>
+                                                <div class="button-space"></div>
+                                            </div>
+
+                                            <div class="action-buttons">
+                                                <div class="manager-btn">OK</div>
+                                                <div class="manager-btn">Cancel</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="screen-overlay" id="screenOverlay"></div>
+                                    <!--  -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ------------------------- -->
+                        <div id="pending-orders" class="section-content  section-content-pending-order">
+                            <!-- <p> order</p> -->
+                            <div class="box-container6" id="boxContainer6">
+
+
+                                <div class="table-container-dealing">
+                                    <table class="dealing-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="dealing-table-th">Login</th>
+                                                <th class="dealing-table-th">Order</th>
+                                                <th class="dealing-table-th">Symbol</th>
+                                                <th class="dealing-table-th">Type</th>
+                                                <th class="dealing-table-th">Volume</th>
+                                                <th class="dealing-table-th">Price</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="dealing-table-td">-</td>
+                                                <td class="dealing-table-td">-</td>
+                                                <td class="dealing-table-td">-</td>
+                                                <td class="dealing-table-td">-</td>
+                                                <td class="dealing-table-td">-</td>
+                                                <td class="dealing-table-td">-</td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="popup-menu1" id="popupMenu1">
+                                    <div class="menu-wrapper">
+                                        <p class="menu-option  menu-option-one ">Modify Order</p>
+                                        <p class="menu-option  menu-option-one "> Delete Order</p>
+                                        <p class="menu-option"> Column <span id="toggleButton"> <img height="10px"
+                                                    src="./images/icons8-right-arrow-30.png" alt=""> </span> </p>
+                                    </div>
+                                    <div class="submenu-list1" id="submenuList1">
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt="">Order</span>
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Symbol </span>
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt=""> Type
+                                        </span>
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Volume </span>
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt="">Price
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- -------------------- -->
+                        <div id="orders" class="section-content  section-content-dealing">
+                            <!-- <p> dealing</p> -->
+                            <div class="box-container8" id="boxContainer8">
+                                <div class="filter-container">
+                                    <label for="login">Login:</label>
+                                    <input class="order-input" type="text" id="login" placeholder="Enter login">
+
+                                    <label for="symbol">Symbol:</label>
+                                    <input class="order-input" type="text" id="symbol" placeholder="Enter symbol">
+
+                                    <select class="order-select" id="type">
+                                        <option value="all">All</option>
+                                        <option value="all">Open Only</option>
+                                        <option value="all">Close Only</option>
+                                        <option value="all">All</option>
+                                    </select>
+
+                                    <select class="order-select" id="date-range">
+                                        <option value="today">Today</option>
+                                        <option value="today">Today</option>
+                                        <option value="today">Last 3 days</option>
+                                        <option value="today">Last Week</option>
+                                        <option value="today">Last Month</option>
+                                        <option value="today">Last 3 months</option>
+                                        <option value="today">Last 6 months</option>
+                                        <option value="today">All history</option>
+                                        <option value="today">Custom</option>
+                                    </select>
+
+                                    <input class="order-input" type="date" id="start-date" value="2025-01-26">
+                                    <input class="order-input" type="date" id="end-date" value="2025-01-27">
+
+                                    <div id="requestorder">Request</div>
+                                </div>
+
+                                <table class="order-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="order-table-th">Time</th>
+                                            <th class="order-table-th">Login</th>
+                                            <th class="order-table-th">Order</th>
+                                            <th class="order-table-th">Symbol</th>
+                                            <th class="order-table-th">Type</th>
+                                            <th class="order-table-th">Volume</th>
+                                            <th class="order-table-th">Price</th>
+                                            <th class="order-table-th">Comment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Table rows will be dynamically populated -->
+                                    </tbody>
+                                </table>
+                                <div class="popup-menu8" id="popupMenu8">
+                                    <div class="menu-wrapper8">
+                                        <p class="menu-option8">
+                                            Column
+                                            <span id="toggleButton8">
+                                                <img height="10px" src="./images/icons8-right-arrow-30.png" alt="">
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="submenu-list8" id="submenuList8">
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Order</span>
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Symbol </span>
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt=""> Type
+                                        </span>
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Volume </span>
+                                        <span class="submenu-options"><img height="10px" src="./images/correct.png"
+                                                alt="">
+                                            Price </span>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <!-- ---------------- -->
+
+
+                        </div>
+
+                        <!-- <div id="access" class="section-content section-content-symbol">
+                            <p> access</p>
+                        </div> -->
+
+                        <div id="holidays" class="section-content  section-content-holidays">
+                            <!-- <p> holidays.</p> -->
+                            <div class="holidays-table-container">
+
+                                <table class="holidays-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="holidays-th">Day</th>
+                                            <th class="holidays-th">From</th>
+                                            <th class="holidays-th">To</th>
+                                            <th class="holidays-th">Description</th>
+                                            <th class="holidays-th">Symbols</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="holidays-td">-</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="holidays-td">-</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="holidays-td">-</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+                                            <td class="holidays-td"> -</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+
+
+                        <div id="intelligent-dealing" class="section-content  section-content-intelligent dealing">
+                            <!-- <p> intelligent dealing</p> -->
+
+                            <div class=" intelligent-table">
+
+                                <table class=" intelligent-acc-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="  intelligent-acc-th">Name</th>
+                                            <th class="  intelligent-acc-th">Action</th>
+                                            <th class="  intelligent-acc-th">Dealers</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="  intelligent-acc-td">-</td>
+                                            <td class="  intelligent-acc-td"> -</td>
+                                            <td class="  intelligent-acc-td"> -</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="  intelligent-acc-td">-</td>
+                                            <td class="  intelligent-acc-td"> -</td>
+                                            <td class="  intelligent-acc-td"> -</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class=" intelligent-acc-td">-</td>
+                                            <td class="  intelligent-acc-td"> -</td>
+                                            <td class="  intelligent-acc-td"> -</td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div id="liquiditity-bridge" class="section-content  section-content-liquiditity-bridge">
+                            <p> liquiditity bridge</p>
+                        </div>
+
+                        <div id="market-data" class="section-content  section-content-market-data  admin-container">
+                            <!-- <p> market data</p> -->
+                            <div class="container-market-box" id="formContainer6">
+                                <div class="header-market-hea">
+                                    <div class="market-data-img-row-box"><img height="16px" width="62px"
+                                            src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                            alt="">
+                                    </div>
+                                    <span> Heddge Capital Admin Terminal</span>
+                                    <!-- <img src="./images/icons8-question-mark-50.png" alt="?" id="question-mark">-->
+                                    <!-- <img id="wrongSign6" class="market-data-wring-img" height="16px" width="16px"
+                                        src="./images/icons8-wrong-30.png" alt="?" id="wrong-sign"> -->
+                                </div>
+
+                                <label class="market-data-label" for="server-ip">Server IP:</label>
+                                <input class="market-data-input" type="text" id="server-ip" value="Default IP is set">
+
+                                <label class="market-data-label" for="server-port">Server Port:</label>
+                                <input class="market-data-input" type="text" id="server-port" value="443">
+
+                                <label class="market-data-label" for="login">Login:</label>
+                                <input class="market-data-input" type="text" id="login" value="1029">
+
+                                <label class="market-data-label" for="password">Password:</label>
+                                <input class="market-data-input" type="password" id="password" value="****">
+
+                                <div class="buttons-market-box">
+                                    <div class="save-btn-market">Save</div>
+                                    <div class="reset-btn-market">Reset to Default</div>
+                                    <div class="cancel-btn-market" id="cancel-btn">Cancel</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
+                        <div id="demo" class="section-content  section-content-demo">
+                            <!-- <p> demo</p> -->
+
+                            <div   class="context-box-group" id="contextBox"> 
+
+                                <div class="table-container">
+                                    <div class="table-filters">
+                                        <input type="text" placeholder="Login:" class="filter-input">
+                                        <input type="text" placeholder="Group:" class="filter-input">
+                                        <input type="text" placeholder="Name:" class="filter-input">
+                                        <button class="request-btn">Request</button>
+                                    </div>
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="data-table-th">Login</th>
+                                                <th class="data-table-th">Name</th>
+                                                <th class="data-table-th">Group</th>
+                                                <th class="data-table-th">Country</th>
+                                                <th class="data-table-th">Company</th>
+                                                <th class="data-table-th">Balance</th>
+                                                <th class="data-table-th">Profit</th>
+                                                <th class="data-table-th">Equity</th>
+                                                <th class="data-table-th">Margin</th>
+                                                <th class="data-table-th">Credit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="data-table-td">2001</td>
+                                                <td class="data-table-td">Desktop Test</td>
+                                                <td class="data-table-td">demo</td>
+                                                <td class="data-table-td"></td>
+                                                <td class="data-table-td"></td>
+                                                <td class="data-table-td">4057.13</td>
+                                                <td class="positive data-table-td">150.10</td>
+                                                <td class="data-table-td">4207.23</td>
+                                                <td class="data-table-td">108.06</td>
+                                                <td class="data-table-td">0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="data-table-td">2002</td>
+                                                <td class="data-table-td">Test UAE</td>
+                                                <td class="data-table-td">demo</td>
+                                                <td class="data-table-td"></td>
+                                                <td class="data-table-td"></td>
+                                                <td class="data-table-td">9892.64</td>
+                                                <td class="positive data-table-td">2176.76</td>
+                                                <td class="data-table-td">12069.40</td>
+                                                <td class="data-table-td">670.85</td>
+                                                <td class="data-table-td">0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="data-table-td">2048</td>
+                                                <td class="data-table-td">Test Fee Account</td>
+                                                <td class="data-table-td">demo</td>
+                                                <td class="data-table-td">UAE</td>
+                                                <td class="data-table-td"></td>
+                                                <td class="data-table-td">337.11</td>
+                                                <td class="negative data-table-td">0.00</td>
+                                                <td class="data-table-td">337.11</td>
+                                                <td class="data-table-td">0.00</td>
+                                                <td class="data-table-td">0.00</td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </div>
+    
+    
+                                <div class="modal-group" id="modal">
+                                    <div class="modal-content-group">
+                                        <div class="tabs">
+                                            <div class="tab active" onclick="showTab('common', event)">Common</div>
+                                            <div class="tab" onclick="showTab('company', event)">Company</div>
+                                            <div class="tab" onclick="showTab('margin', event)">Margin</div>
+                                            <div class="tab" onclick="showTab('symbol', event)">Symbol</div>
+                                            <div class="tab" onclick="showTab('commission', event)">Commission</div>
+                                        </div>
+                                
+                                        <div class="form-content" id="commonTab">
+                                            <div class="form-group-box">
+                                                <div class="container">
+                                                    <div class="form-group-box">
+                                                        <label for="group-name">Group Name:</label>
+                                                        <input type="text" id="group-name">
+                                                    </div>
+                                
+                                                    <div class="form-group-box">
+                                                        <label for="group-currency">Group Currency:</label>
+                                                        <select id="group-currency">
+                                                            <option>USD</option>
+                                                            <option>EUR</option>
+                                                            <option>GBP</option>
+                                                        </select>
+                                                    </div>
+                                
+                                                    <div class="form-group-box">
+                                                        <label for="currency-rate">Currency Rate:</label>
+                                                        <input type="text" id="currency-rate" placeholder="Enter rate">
+                                                    </div>
+                                
+                                                    <div class="form-group-box">
+                                                        <label for="digits">Digits:</label>
+                                                        <select id="digits">
+                                                            <option>2</option>
+                                                            <option>4</option>
+                                                            <option selected>5</option>
+                                                        </select>
+                                                    </div>
+                                
+                                                    <div class="form-group-box">
+                                                        <label for="group-master">Group Master:</label>
+                                                        <input type="text" id="group-master">
+                                                    </div>
+                                
+                                                    <div class="checkbox-group">
+                                                        <!-- Checkbox items here -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            document.getElementById("contextBox").addEventListener("contextmenu", function(event) {
+                                                event.preventDefault();
+                                                document.getElementById("modal").style.display = "flex";
+                                            });
+                                        
+                                            function closeModal() {
+                                                document.getElementById("modal").style.display = "none";
+                                            }
+                                        
+                                            window.onclick = function(event) {
+                                                if (event.target === document.getElementById("modal")) {
+                                                    closeModal();
+                                                }
+                                            };
+                                        
+                                            function showTab(tabName, event) {
+                                                // Hide all tab contents
+                                                document.querySelectorAll(".form-content").forEach(content => {
+                                                    content.style.display = "none";
+                                                });
+                                        
+                                                // Remove 'active' class from all tabs
+                                                document.querySelectorAll(".tab").forEach(tab => {
+                                                    tab.classList.remove("active");
+                                                });
+                                        
+                                                // Add 'active' class to the clicked tab
+                                                if (event) {
+                                                    event.target.classList.add("active");
+                                                } else {
+                                                    // If no event, find the tab by tabName and add 'active' class
+                                                    document.querySelector(`.tab[onclick="showTab('${tabName}', event)"]`).classList.add("active");
+                                                }
+                                        
+                                        
+                                                // Show the selected tab content
+                                                document.getElementById(tabName + 'Tab').style.display = "block";
+                                            }
+                                        
+                                            // Call showTab to set default tab when the page loads
+                                            document.addEventListener("DOMContentLoaded", function() {
+                                                showTab('common');
+                                            });
+                                        </script>
+                            
+                                        <div class="form-content" id="companyTab" style="display: none;">
+                                            <div class="form-group-box">
+                            
+                                                <div class="form-container-company">
+                                                    <label class="label-company" for="company">Company:</label>
+                                                    <select class="company-select company-select-one" id="company">
+                                                        <option value="">Select Company</option>
+                                                    </select>
+                            
+                                                    <label class="label-company" for="company-site">Company site:</label>
+                                                    <input class="company-select-input" type="text" id="company-site">
+                            
+                                                    <label class="label-company" for="company-email">Company email:</label>
+                                                    <input class="company-select-input" type="email" id="company-email">
+                            
+                                                    <label class="label-company" for="deposit-site">Deposite site:</label>
+                                                    <input class="company-select-input" type="text" id="deposit-site">
+                            
+                                                    <label class="label-company" for="withdrawal-site">Withdrawal site:</label>
+                                                    <input class="company-select-input" type="text" id="withdrawal-site">
+                            
+                                                    <label class="label-company" for="support-site">Support site:</label>
+                                                    <input class="company-select-input" type="text" id="support-site">
+                            
+                                                    <label class="label-company" for="support-email">Support email:</label>
+                                                    <input class="company-select-input" type="email" id="support-email">
+                            
+                                                    <label class="label-company" for="template-folder">Template folder:</label>
+                                                    <input class="company-select-input" type="text" id="template-folder">
+                                                </div>
+                            
+                            
+                            
+                            
+                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="form-content" id="marginTab" style="display: none;">
+                                          
+                                                                                        <div class="form-group-box">
+                            
+                                                <div class="form-container-company-margin">
+                            
+                            
+                                                    <label class="label-company-margin" for="company-site">Margin Call Level : </label>
+                                                    <input class="company-select-input-margin" type="text">
+                            
+                                                    <label class="label-company-margin" for="company-email"> Stop Out Level:</label>
+                                                    <input class="company-select-input-margin" type="email">
+                            
+                                                    <label class="label-company-margin" for="company">In:</label>
+                                                    <select class="company-select-margin">
+                                                        <option value="">Select Company</option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                    </select>
+                            
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-content" id="symbolTab" style="display: none;">
+                                            <div class="form-group-box">
+                                                <div class="container-comminsion">
+                                                    <div class="table-container-commition">
+                                                        <table class="table-container-commition-tbl">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="commission-th">Symbol</th>
+                                                                    <th class="commission-th">Spread</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr> <!-- Added <tr> to wrap table data correctly -->
+                                                                    <td class="commission-td">-</td>
+                                                                    <td class="commission-td">-</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="button-container-commision">
+                                                        <button class="buton-commision">Add</button>
+                                                        <button class="buton-commision">Edit</button>
+                                                        <button class="buton-commision">Delete</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                            
+<div class="form-content" id="commissionTab" style="display: none;">
+                                            <div class="form-group-box">
+                                                <div class="container-comminsion">
+                                                    <div class="table-container-commition">
+                                                        <table class="table-container-commition-tbl">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="commission-th">Name</th>
+                                                                    <th class="commission-th">Symbol</th>
+                                                                    <th class="commission-th">Type</th>
+                                                                    <th class="commission-th">Range</th>
+                                                                    <th class="commission-th">Charge</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <td class="commission-td">-</td>
+                                                                <td class="commission-td">-</td>
+                                                                <td class="commission-td"> -</td>
+                                                                <td class="commission-td"> -</td>
+                                                                <td class="commission-td"> -</td>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                            
+                                                    <div class="button-container-commision">
+                                                        <button class="buton-commision">Add</button>
+                                                        <button class="buton-commision"> Edit</button>
+                                                        <button class="buton-commision">Delete</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="button-group">
+                                            <div class="btn-ok-group-all-part" onclick="closeModal()">OK</div>
+                                            <div class=" btn-ok-group-all-part" onclick="closePage()">Cancel</div>
+                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <!--  -->
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------- -->
+
+
+
+            <!-- third-section----------------------------------------------- -->
+
+
+            <div class="col-sm-12 col-md-12 col-lg-2 market-watch-section-three mt-3 m-0 " id="formContainer2">
+
+
+                <div class=" market-sectio  p-0">
+                    <div class=" market-sectio-row-name-box">
+                        <div class=" market-sectio-row-name">Market Watch</div>
+                    </div>
+                    <div class=" market-sectio-row-name-box2">
+                        <div class=" market-sectio-row-full   "><img class="win-img" src="./images/icons8-copy-24.png"
+                                alt="">
+                        </div>
+                        <div class=" market-sectio-row-wrong" id="wrongSign2"><img class="wrong-img"
+                                src="./images/icons8-wrong-30.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="market-watch-section    ">
+                    <div class="market-watch-section-row">
+                        <div class="market-watch-section-box1 watch-boxes" onclick="highlightBox(this)">
+                            <div class="market-watch-section-box1-name" onmouseover="hoverName(this)"
+                                onmouseout="removeHoverName(this)">Symbol</div>
+                            <div class="market-watch-section-box1-no">XAU...</div>
+                        </div>
+                        <div class="market-watch-section-box2 watch-boxes" onclick="highlightBox(this)">
+                            <div class="market-watch-section-box1-name" onmouseover="hoverName(this)"
+                                onmouseout="removeHoverName(this)">bid</div>
+                            <div class="market-watch-section-box1-no">274...</div>
+                        </div>
+                        <div class="market-watch-section-box3 watch-boxes" onclick="highlightBox(this)">
+                            <div class="market-watch-section-box1-name" onmouseover="hoverName(this)"
+                                onmouseout="removeHoverName(this)">ask</div>
+                            <div class="market-watch-section-box1-no ask-value">274...</div>
+                        </div>
+                        <div class="market-watch-section-box4 watch-boxes" onclick="highlightBox(this)">
+                            <div class="market-watch-section-box1-name" onmouseover="hoverName(this)"
+                                onmouseout="removeHoverName(this)">spread</div>
+                            <div class="market-watch-section-box1-no">12...</div>
+                        </div>
+                        <div class="market-watch-section-box5 watch-boxes" onclick="highlightBox(this)">
+                            <div class="market-watch-section-box1-name" onmouseover="hoverName(this)"
+                                onmouseout="removeHoverName(this)">high</div>
+                            <div class="market-watch-section-box1-no">275...</div>
+                        </div>
+                        <div class="market-watch-section-box6 watch-boxes" onclick="highlightBox(this)">
+                            <div class="market-watch-section-box1-name" onmouseover="hoverName(this)"
+                                onmouseout="removeHoverName(this)">low</div>
+                            <div class="market-watch-section-box1-no">247...</div>
+                        </div>
+                        <div class="market-watch-section-box7 watch-boxes" onclick="highlightBox(this)">
+                            <div class="market-watch-section-box1-name" onmouseover="hoverName(this)"
+                                onmouseout="removeHoverName(this)">Time</div>
+                            <div class="market-watch-section-box1-no">03:3...</div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="main-div" oncontextmenu="openBox(event)"></div>
+
+                    <div class="box" id="box">
+                        <div class="box-in-box-one  watvh-hode-butn-show" onclick="hideBox()"> Hide </div>
+                        <div class="box-in-box-two   watvh-hode-butn-show" onclick="showForm()"> Show </div>
+
+                    </div>
+
+                    <div class=" form-container-watch" id="form">
+
+                        <form>
+                            <div class="symbol-form">
+                                <div class="symbol-form-header">
+                                    <div class="symbol-form-header-img"><img height="25px"
+                                            src="./images/1737625911306-ff20c204-5c62-45b0-ad13-d7c79f65739a_1.jpg"
+                                            alt="#">
+                                    </div>
+                                    <div class="symbol-form-header-name">Show/Hide Symbols</div>
+                                    <div class="symbol-form-header-que-wrong  d-flex">
+                                        <div class="symbol-form-header-que"><img height="15px "
+                                                src="./images/icons8-question-mark-50.png" alt=""></div>
+                                        <span class="close" onclick="closeForm()"><img height="20px" src="./images/mark-form.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="symbol-form-header-sym">
+                                    <div class="symbol-form-header-sym-name">Symbol</div>
+                                    <div class="symbol-form-header-sym-name-box"></div>
+                                </div>
+
+                                <div class="symbol-form-header-sym-specification">Specification</div>
+                                <div class="symbol-form-header-sym-specification-box"></div>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./js/groups2.js"></script>
+    <script src="./js/manager.js"></script>
+    <script src="./js/trading.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/order.js"></script>
+    <script src="./js/deal-column.js"></script>
+    <script src="./js/position-column.js"></script>
+    <script src="./js/market.js"></script>
+    <script src="./js/position.js"></script>
+    <script src="./js/wrong.js"></script>
+    <script src="./js/group.js"></script>
+    <script src="./js/popupbox.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/pending-order.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

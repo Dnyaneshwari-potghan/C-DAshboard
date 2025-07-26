@@ -1,0 +1,1375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    font-size: 12px;
+}
+html, body{
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+.main-secition-all{
+    background-color: rgb(241, 234, 234);
+}
+.ntrader-header-name{
+    display: flex;
+    gap: 0px;
+    text-align: center;
+ 
+    align-items: center;
+}
+.ntrader-header-name-one{
+    font-size: 12px;
+    cursor: pointer;
+}
+.navigatior-section-col-side {
+ 
+}
+.sidebar-trader-app{
+    height: 792px;
+    width: auto;
+    border: 1px solid #686464;
+    margin-top: 6px;
+    background-color: #fff;
+}
+
+/*sidebar-section  */
+.navigatior-sectio{
+    height: 30px;
+    width: auto;
+    border: 1px solid    #6b6969;
+    background-color:  #c3bcbc;
+    margin-left: -8px !important;
+    padding-left: calc(var(--bs-gutter-x)* -0.5);
+display: flex;
+gap: 145px;
+justify-content: center;
+align-items: center;
+
+}
+.navigatior-sectio-row-name-box2{
+    display: flex;
+    gap: 10px;
+}
+
+.win-img , .wrong-img{
+    height: 13px;
+    width: 13px;
+}
+ 
+.sidebar { 
+    box-sizing: border-box; 
+}
+   /* Show the dropdown content when the button is clicked */
+   .dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* Rotate arrow when the dropdown is active */
+.dropdown.active .arrow {
+    transform: rotate(90deg);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex
+    ;
+        gap: 1px;
+    }
+
+ 
+
+.sidebar .dropdown {
+    padding-left: 20px;
+    display: none;
+}
+
+.sidebar .dropdown.active {
+    display: block;
+}
+ 
+
+.section-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.section-content.active {
+    display: block;
+}
+
+.section-title {
+    
+    cursor: pointer;
+}
+/* .ntrader-middle-section {
+    
+    background-color: rgb(241, 234, 234);
+} */
+ .holidays-right-section{
+    margin-left: 8%;
+ } 
+
+ 
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .section-title {
+    cursor: pointer;
+    padding: 10px;
+     
+}
+
+.sidebar .dropdown {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar .dropdown li {
+    padding: 5px 0;
+}
+
+.sidebar img.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+
+   
+
+
+
+
+
+/* middle -sectiob------------- */
+.second-section-middle{
+    height: 828px;
+    /* width: 1014px; */
+    border: 1px solid #686464;
+    background-color: #fff;
+}
+
+/* account */
+.section-content-login-form{
+    height: 340px;
+    width: 475px;
+    border: 1px solid #8a8585;
+    border-radius: 5px;
+    background-color:  #cfc5c557;
+    box-shadow: 0px 0px 14px 4px #707275;
+    margin-left: 24%;
+    margin-top: 12%;
+}
+.login-account-header{
+    display: flex;
+    gap: 6px;
+    padding: 4px;
+}
+.login-acc-server{
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 13px;
+    margin-top: 6%;
+}
+.login-server{
+    margin-left: 24%;
+}
+.search-server{
+    width: 69%;
+    margin-left: 24%;
+}
+.login-acc-all-lgn , .login-acc-all-pass{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.login-input {
+    width: 67%;
+    margin-left: 77px;
+}
+.pass-login {
+    margin-left: 52px;
+    width: 67%;
+}
+.pass-login-conf{
+    width: 67%;
+}
+.login-acc-all{
+    margin-top: 5%;
+}
+.login-button-two{
+    display: flex;
+    gap: 12%;
+}
+.ok-login-btn {
+    height: 26px;
+    width: 134px;
+    border: 1px solid #7e7777;
+    background-color: #fff;
+    margin-left: 39%;
+    margin-top: 34%;
+    border-radius: 3px;
+}
+.cancel-login-btn{
+    height: 26px;
+    width: 134px;
+    border: 1px solid #7e7777;
+    background-color: #fff;
+    margin-left: 72%;
+    margin-top: 34%;
+    border-radius: 3px;
+}
+.login-acc-logo-img {
+    display: flex
+;
+    margin-left: 68%;
+    gap: 7px;
+    margin-top: -1px;
+}
+.login-account-header-name{
+    margin-top: 4px;
+    cursor: pointer;
+}
+.menu-option-one{
+color: #7a7474;
+}
+
+/* trader */
+.trade-box-one{
+    display: flex ; 
+    align-items: center;
+    
+}
+.trade-cluster-all-one{
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    gap: 12px;
+}
+.trade-cluster-all-img-name{
+    font-size: 18px;
+    font-weight: 700;
+}
+.trade-cluster-all-two{
+    display: flex  ;
+        
+        gap: 33px;
+        margin-left: 134px;
+}
+.trade-cluster-all-two-name{
+    margin-top: 3%;
+}
+#dark{
+    font-weight: 700;
+}
+.section-content-trade-line{
+    border-right: 2px solid #8f8383;
+    height: 93px;
+    margin-left: 194px;
+}
+.trade-middle-lines-more{
+    width: 94%;
+    border: 1px solid #757171;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.trade-box-two{
+    display: flex;
+    align-items: center;
+    gap: 28%;
+    margin-left: 4%;
+}
+ 
+.trade-box-two-one-name {
+    font-weight: 800;
+    display: flex
+;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 3%;
+}
+.trade-box-two-mid-line {
+    border-right: 2px solid #8f8383;
+    height: 93px;
+    margin-left: 56px;
+    margin-top: 3%;
+}
+.trade-box-two-mid-line-ser{
+ 
+        border-right: 2px solid #8f8383;
+        height: 93px;
+        margin-left: 65px;
+        margin-top: 3%;
+    }
+
+.trade-box-two-button{
+    display: flex
+;
+    gap: 89px;
+    margin-left: -134px;
+    margin-top: 3%;
+}
+.trade-box-two-button-btn{
+    height: 65px;
+    width: 130px;
+    padding: 22px 25px;
+    /* border: 1px solid black; */
+    background-color: #c6bebe;
+
+}
+.trade-box-two-button-btn-validity{
+    margin-top: 7%;
+}
+.section-content-trade-line-his {
+    border-right: 2px solid #8f8383;
+    height: 93px;
+    margin-left: 282px;
+    margin-top: 3%;
+}
+.trade-box-three{
+    display: flex;
+     
+}
+.server-cluster-h2{
+    margin-left: 4%;
+    margin-top: 3%;
+}
+.server-cluster-h2-name{
+    font-weight: 800;
+    font-size: 21px;
+}
+.server-cluster-h2-name1 , .trade-box-two-one-name1{
+    font-size: 15px;
+}
+.server-cluster-button{
+    display: flex
+    ;
+        align-items: center;
+        margin-left: 15%;
+        height: 40px;
+        width: 154px;
+        border: 1px solid #a79e9e;
+        padding-left: 3%;
+        margin-top: 5%;
+        border-radius: 6px;
+        background-color: #fff;
+        box-sizing: 20px 2px 2px 2px gray;
+        box-shadow: 0px 0px 1px 1px #fff;
+}
+.trade-middle-lines-clu{
+    border-right: 2px solid gray;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+/*------------------ position----------------------- */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+#request{
+    height: 30px;
+    width: 64px;
+    border: 1px solid rgb(83, 80, 80);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 10px;
+}
+
+.top-bar input, 
+.top-bar select, 
+.top-bar button {
+    padding: 5px;
+}
+
+.table-container {
+    
+    overflow-x: auto;
+}
+
+.position-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.position-table-th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.position-table-th {
+    background-color: #f4f4f4;
+}
+
+
+/* order----------------- */
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+.order-input, .order-select {
+    padding: 5px;
+}
+#requestorder , .requestdeal {
+    padding: 5px;
+    padding-left: 15px;
+    height: 30px;
+    width: 82px;
+    border-radius: 3px;
+    border: 1px solid rgb(147, 138, 138);
+}
+.order-table {
+    width: 98%;
+    margin-left: 1%;
+    border-collapse: collapse;
+}
+.order-table-th, td {
+    border: 1px solid rgb(147, 138, 138);
+    padding: 8px;
+    text-align: left;
+}
+.order-table-th {
+    background-color: #f2f2f2;
+}
+/* online-user-------------- */
+.online-user-table {
+    width: 98%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.online-user-th, .online-user-td {
+    border: 1px solid rgb(202, 196, 196);
+    padding: 8px;
+    text-align: left;
+}
+.online-user-th {
+    background-color: #f2f2f2;
+}
+/* ------------deals----------------- */
+.filter-container {
+    display: flex
+;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+}
+.deal-table-input , .select-deal , .requestdeal {
+    padding: 5px;
+}
+.requestdeal {
+    padding-left: 13px;
+}
+
+.deal-table {
+    width: 96%;
+    margin-left: 7%;
+    border-collapse: collapse;
+}
+.deal-table-th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.deal-table-th {
+    background-color: #f2f2f2;
+}
+/* -------------------------- */
+/* market-watch-section----------------------- */
+.market-watch-section{
+    height:791px;
+    /* width: 244px; */
+    border: 1px solid #545050;
+    margin-top: 6px;
+    background-color: #fff;
+}
+.market-sectio{
+    height: 30px;
+    /* width: 243px !important; */
+    border: 1px solid    #5e5a5a;
+    background-color:  #c3bcbc;
+     cursor: pointer;
+    
+display: flex;
+gap: 108px;
+justify-content: center;
+align-items: center;
+}
+.market-sectio-row-name-box2{
+    display: flex;
+    gap: 12px;
+}
+.market-watch-section-row{
+    display: flex;
+  
+}
+.market-watch-section-box1-name , .market-watch-section-box1-no{
+    font-size: 11px;
+}
+.watch-boxes{
+    height: 34px;
+    width: 44px;
+    border: 1px solid rgb(171, 165, 165);
+    cursor: pointer;
+}
+.market-watch-section-box1-name:hover{
+background-color: rgb(163, 200, 225);
+}
+ 
+.ask-value{
+    color: red;
+}
+
+.watch-boxes {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the name section */
+.market-watch-section-box1-name.hovering {
+    background-color: rgb(159, 217, 217);
+}
+
+/* Click effect for the entire box */
+.watch-boxes.clicked {
+    background-color: rgb(166, 225, 225);
+}
+
+.watch-boxes.clicked .market-watch-section-box1-no {
+    background-color: rgb(97, 97, 207);
+    color: white;
+    border: 1px dashed  #181717;
+}
+
+
+/* Popup Modal Styles */
+.popup-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.popup-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10% auto;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.show-btn, .hide-btn {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hide-btn {
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+ 
+/* Popup Modal Styles */
+.popup-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.popup-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10% auto;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.show-btn, .hide-btn {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hide-btn {
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+ 
+.main-div {
+    width: 244px;
+    height: 96%;
+    /* background-color: #4CAF50; */
+    color: white;
+    /* display: flex
+; */
+    justify-content: center;
+    /* align-items: center; */
+    cursor: pointer;
+    /* margin: 50px auto; */
+    text-align: center;
+  }
+  
+  .box {
+    display: none;
+    width: 93px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+}
+.watvh-hode-butn-show{
+    border: none;
+}
+  
+  .form-container-watch {
+    display: none;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .form-container-watch .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: rgb(69, 66, 66);
+    cursor: pointer;
+  }
+  .box-in-box-one:hover{
+background-color: aquamarine;
+cursor: pointer;
+  }
+
+  .box-in-box-two:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+      }
+
+      .form-container-watch {
+        position: relative;
+        width: 361px;
+        height: 63%;
+        background-color: #fff;
+        margin-left: -678px;
+        bottom: 731px;
+        
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgb(10 10 10 / 10%);
+    }
+  
+      .wrong-sign {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .symbol-form-header {
+        display: flex
+    ;
+        /* margin-top: 10px; */
+        /* margin-left: 15px; */
+    }
+      .symbol-form-header-name {
+        color: #3c3a3a;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+    .symbol-form-header-sym-name {
+        margin-top: 4%;
+        color: #3c3a3a;
+        
+    }
+    .symbol-form-header-sym-name-box {
+        height: 280px;
+        width: 324px;
+        border: 1px solid #827b7b;
+        border-radius: 2px;
+        margin-left: -3px;
+    }
+    .symbol-form-header-sym-specification {
+        margin-top: 2%;
+        color: #3c3a3a;
+        
+    }
+    .symbol-form-header-sym-specification-box {
+        height: 99px;
+        width: 324px;
+        border: 1px solid #615c5c;
+        border-radius: 2%;
+        margin-top: 1%;
+        
+    }
+.symbol-form-header-que-wrong {
+    margin-left: 88px;
+}
+
+  /* -------------------------demo--------------------------- */
+  .table-container {
+    width: 98%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    /* border-radius: 8px; */
+    overflow: hidden;
+}
+
+.table-filters {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.request-btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ 
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-table , .data-table-th , .data-table-td{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid  #ddd ;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table .data-table-th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+ 
+
+.positive {
+    color: green;
+    font-weight: bold;
+}
+
+.negative {
+    color: red;
+    font-weight: bold;
+}
+
+/*--------------- dealing------------------- */
+
+.header-dealing{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.arrow-button {
+    width: 40px;
+    height: 40px;
+    background: #e0f7fa;
+    border: 1px solid #4caf50;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-button:hover {
+    background: #4caf50;
+    color: #fff;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-button {
+    padding: 10px 20px;
+    border: none;
+  background-color: #f4f4f4;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+ 
+
+.table-container-dealing {
+    overflow-x: auto;
+}
+
+.dealing-table {
+    width: 96%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dealing-table-th{
+    background-color: #f4f4f4;
+}
+
+.dealing-table-th,
+.dealing-table-td {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* trading accounts------------------ */
+
+.trading-acc-table {
+    width: 96%;
+    border-collapse: collapse;
+    margin-left: 2%;
+    margin-top: 3%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trading-acc-table  .trading-acc-th ,   .trading-acc-td{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.trading-acc-table .trading-acc-th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* intelligent dealing----------------- */
+.intelligent-acc-table {
+    width: 98%;
+    border-collapse: collapse;
+    margin-left: 1%;
+    margin-top: 4%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intelligent-acc-table  .intelligent-acc-th ,   .intelligent-acc-td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.intelligent-acc-table .intelligent-acc-th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+ 
+ 
+ /*------------------- holidays------------------------ */
+ 
+ .holidays-table {
+    width: 98%;
+    margin-left: 1%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+.holidays-table .holidays-th,   .holidays-td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.holidays-table .holidays-th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+ 
+   /* -----------manager------------------- */
+   
+.manager-table{
+    width: 98%;
+    border-collapse: collapse;
+    margin-left: 1%;
+}
+
+ .manager-table .manager-th,   .manager-td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.manager-table .manager-th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+.pass-login-con{
+    width: 67%;
+}
+.save-btn-market {
+    height: 30px;
+    width: 75px;
+    border: 1px solid #998e8e;
+    padding: 6px 19px;
+    border-radius: 4px;
+}
+.reset-btn-market {
+    height: 33px;
+    width: 135px;
+    border: 1px solid #998e8e;
+    padding: 8px 19px;
+    border-radius: 4px;
+}
+.cancel-btn-market {
+    height: 30px;
+    width: 80px;
+    border: 1px solid #998e8e;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+
+/* market */
+.container-market-box {
+    width: 390px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    margin-left: 28%;
+    margin-top: 13%;
+}
+.header-market-hea{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    gap: 11px;
+}
+.header-market-hea img   {
+    
+    cursor: pointer; /* Make the icon clickable */
+}
+.market-data-wring-img{
+    margin-left:24%;
+}
+.market-data-label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+.market-data-input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.buttons-market-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+  /* Style the div where right-click is enabled */
+  .right-click-area {
+    width: 900px;
+    height: 811px;
+    /* background-color: lightgray; */
+    /* display: flex
+; */
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 1%;
+    position: relative;
+}
+
+/* Style for the popup box */
+.popup {
+    display: none;
+    position: absolute;
+    /* padding: 3px; */
+    background-color: rgb(247, 241, 241);
+    /* border-radius: 10px; */
+    z-index: 10;
+    font-size: 0.8rem;
+    width: 88px;
+    box-shadow: -1px 2px 2px 2px gray;
+}
+
+/* Hidden box that appears when clicking the arrow */
+.box-list {
+    display: none;
+    margin-top: -41px;
+    background: rgb(250, 247, 247);
+    color: black;
+    padding: 10px;
+    width: 135px;
+    margin-left: 100%;
+    /* border-radius: 5px; */
+    box-shadow: 2px 2px 2px 2px gray;
+    border: 3px solid rgb(249, 246, 246);
+}
+
+/* Make sure the arrow is clickable */
+#arrowButton {
+    cursor: pointer;
+}
+
+.all-pages-box {
+    display: flex ;
+   
+    margin-top: 12%;
+    justify-content: center;
+    box-shadow: 0px 0px -17px -51px white;
+}
+.all-pages-box-p {
+    margin-left: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.box-list-correct{
+    display: flex;
+    gap: 15px;
+   cursor: pointer;
+}
+
+/* position-column */
+.context-menu-area {
+    width: 1011px;
+    height: 701px;
+    /* background-color: lightgray; */
+    /* display: flex
+; */
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px solid #000; */
+    /* position: relative; */
+}
+
+.context-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(247, 241, 241);
+    z-index: 10;
+    font-size: 0.8rem;
+    width: 88px;
+}
+
+.dropdown-list {
+    display: none;
+    margin-top: -42px;
+    background: rgb(250, 247, 247);
+    color: black;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #ada8a8;
+    width: 120px;
+    margin-left: 101%;
+    border: 3px solid rgb(249, 246, 246);
+}
+
+#dropdownArrow {
+    cursor: pointer;
+}
+.menu-container {
+    
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    align-items: inherit;
+    box-shadow: 0px 2px 2px 1px gray;
+}
+
+.menu-text {
+    margin-left: 5px;
+    font-weight: 600;
+    margin-top: 11px;
+    height: 21px;
+    cursor: pointer;
+    
+}
+
+.dropdown-item {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+/* pending --------orders------------ */
+/* .box-container1 {
+    width: 1013px;
+    height: 811px;
+    
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+}
+
+.popup-menu1 {
+    display: none;
+    position: absolute;
+    background-color: rgb(247, 241, 241);
+    z-index: 10;
+    font-size: 0.8rem;
+    width: 88px;
+}
+
+.submenu-list1 {
+    display: none;
+    margin-top: -40px;
+    background: rgb(250, 247, 247);
+    color: black;
+    padding: 10px;
+    width: 130px;
+    margin-left: 96%;
+    box-shadow: 2px 2px 2px 2px gray;
+    border: 3px solid rgb(249, 246, 246);
+}
+
+#toggleButton {
+    cursor: pointer;
+}
+
+.menu-wrapper {
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+    
+    justify-content: center;
+    box-shadow: 0px 0px -17px -51px white;
+}
+.menu-option1 {
+    margin-left: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submenu-options {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+} */
+/* }
+.box-container2 {
+    width: 1011px;
+    height: 811px;
+    /* background-color: lightgray; */
+    /* display: flex
+; */
+    /* justify-content: center;
+    align-items: center; */
+    /* border: 2px solid #000; */
+    /* position: relative;
+}
+.popup-menu2 {
+    display: none;
+    position: absolute;
+    background-color: rgb(247, 241, 241);
+    z-index: 10;
+    font-size: 0.8rem;
+    width: 88px;
+}
+
+.submenu-list2 {
+    display: none;
+    margin-top: -41px;
+    background: rgb(250, 247, 247);
+    box-shadow: 2px 2px 2px 2px gray;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    margin-left: 100%;
+    border: 3px solid rgb(249, 246, 246);
+}
+
+#toggleButton {
+    cursor: pointer;
+}
+
+.menu-wrapper {
+    display: flex ;
+    justify-content: center;
+    padding-top: 10px;
+    box-shadow: 0px 0px -17px -51px white;
+}
+
+.menu-option2 {
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.submenu-options {
+    display: flex;
+    gap: 15px;
+} */  
+
+.box-container8 {
+    width: 1011px;
+    height: 811px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+   
+}
+.popup-menu8 {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    font-size: 0.8rem;
+    width: 84px;
+    padding: 4px;
+    height: 38px;
+    /* border: 1px solid #ccc; */
+    box-shadow: -2px 3px 2px 0px gray;
+}
+
+.submenu-list8 {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: rgb(250, 247, 247);
+    color: black;
+    padding: 10px;
+    width: 120px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+#toggleButton8 {
+    cursor: pointer;
+}
+
+.menu-wrapper8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu-option8 {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submenu-options {
+    display: block;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.submenu-list8.show {
+    display: block;
+}
+
+/* -----------manager----------------- */
+ 
